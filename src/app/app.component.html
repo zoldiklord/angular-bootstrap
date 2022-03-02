@@ -15,9 +15,9 @@
 <div class="container">
    <div class="col-md-3">
      <ul class="list-group" *ngIf="categories">
-       <li [ngClass]="currentCategory==c?'active':''" (click)="getProductsByCat(c)" class="list-group-item clickable" *ngFor="let c of categories._embedded.categories">
+       <mat-card [ngClass]="currentCategory==c?'active':''" (click)="getProductsByCat(c)" class="list-group-item clickable" *ngFor="let c of categories._embedded.categories">
          {{c.name}}
-       </li>
+       </mat-card>
      </ul>
     </div>
     

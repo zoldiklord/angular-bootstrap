@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogueService } from './catalogue.service';
 import { Router } from '@angular/router';
+import { MatCard } from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
